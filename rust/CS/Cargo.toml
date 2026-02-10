@@ -1,0 +1,11 @@
+[package]
+name = "CS"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cargo-cross = "1.4.1"
+
+
+[build-dependencies]
+[target.x86_64-pc-windows-gnu]

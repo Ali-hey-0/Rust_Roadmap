@@ -1,0 +1,34 @@
+[package]
+name = "async_tokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+futures = "*"
+async-std = "*"
+tokio = { version = "*", features = ["full"] }
+clap = { version = "*", features = ["derive", "cargo"] }
+reqwest = { version = "*", features = ["stream"] }
+futures-util = "*"
+mktemp = "0.5.1"
+async-tempfile = "0.7.0"
+
+[[bin]]
+name = "test-tcp-server"
+path = "src/test-tcp-server.rs"
+
+
+[[bin]]
+name = "async_test"
+path = "src/async_test.rs"
+
+
+[[bin]]
+name = "async_test-tcp-server"
+path = "src/async_test-tcp-server.rs"
+
+
+[[bin]]
+name = "test-tokio"
+path = "src/test-tokio.rs"
